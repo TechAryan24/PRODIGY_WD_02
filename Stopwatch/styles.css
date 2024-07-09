@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.timerBtn{
+    width: 80px;
+    height:30px;
+    border: 3px solid ;
+    border-radius: 10px;
+    background-color:#44444d;
+    color: 	#d6f651;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: .2s  ease-in-out;
+    
+}
+
+#clearLapsBtn{
+    font-size: 15px;
+    width:fit-content;
+    margin: 5px 21rem;
+}
+#clearLapsBtn:hover{
+    background-color: black;
+    letter-spacing: 1px;
+    
+
+}
+.timerBtn:hover{
+    color:#00ff9f;
+    letter-spacing: 2px;
+    
+}
+
+.timeDisplay{
+    font-size: 70px;
+    font-family:"Roboto Mono", monospace;
+    color:	#00ff9f;
+}
+
+.timeContainer{
+    background-color: black;
+    text-align: center;
+    border: 4px solid;
+    color: #d6f651;
+    border-radius: 22px;
+    margin: 5rem 24rem;
+}
+
+/* Laps  */
+
+.lapContainer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #44444d;
+    height: auto;
+    width: 50rem;
+    margin: 0.5rem 20rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    display: block;
+    border:4px solid #d6f651;
+    border-radius: 20px;
+    
+}
+
+.lapContainer.active {
+    display: block;
+
+}
+
+.laps {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #44444d8a;
+    padding: 10px;
+    /* border: 1px solid #d6f651; */
+    margin-bottom: 10px;
+    
+}
+
+.lap {
+    padding: 5px;
+    border: 1px solid rgb(25, 89, 25);
+    border-radius: 12px;
+    width: 18rem;
+    text-align: center;
+    margin: 14px 14rem;
+    color: black;
+    background-color: #99ed74d5;
+
+}
+
+.lapContainer h3 {
+    font-size: 2rem;
+    color: #ddd;
+    text-align: center;
+    text-decoration: underline;
+}
